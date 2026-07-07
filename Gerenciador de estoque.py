@@ -1,26 +1,19 @@
-#!/usr/bin/env python
-# coding: utf-8
+# Gerenciador de Estoque
 
-# ### Gerenciador de Estoque e Validade
+#Projeto básico em python de um gerenciador de estoque, onde é usado SQLLITE.
 
-# ### voce deve:
-# cadastrar produtos (nome, quantidade, validade e lote)
-# controlar quantidade
-# Atualizar estoque (adicionar quantidade, remover quantidade)
-# buscar produtos(nome, lote)
-# alertar produtos vencidos(produtos vencidos)
-# 
-# dica:antes criar a conexão com o banco de dados onde irá ser armazenado as informações.
-
-# In[3]:
+## Principais Funcionalidades do programa
+- Cadastro de produtos
+- Consulta de produtos
+- Atualização de estoque
+- Exclusão de produtos
+- Alerta de validade
 
 
 #importando a biblioteca
 import pyodbc #importando a biblioteca pyodbc
 print(pyodbc.drivers()) #buscando pelo banco SQLite3 ODBC Driver   
 
-
-# In[4]:
 
 
 #criar conexão com o banco de dados
@@ -32,8 +25,6 @@ conexao = pyodbc.connect(conexao_banco)
 cursor = conexao.cursor()
 print('conexao bem sucedida')
 
-
-# In[24]:
 
 
 cursor.execute("""
@@ -47,8 +38,6 @@ CREATE TABLE estoque (
 """)
 conexao.commit()
 
-
-# In[5]:
 
 
 #função para verificar produto vencido
@@ -164,21 +153,10 @@ while True:
     else: 
         print('produto não encontrado')
 
-
-# In[7]:
-
-
 cursor.close()
 conexao.close()
 
 
-# In[22]:
-
-
-
-
-
-# In[ ]:
 
 
 

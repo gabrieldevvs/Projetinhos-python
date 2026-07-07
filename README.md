@@ -2,7 +2,7 @@
 
 Projeto desenvolvido para colocar em prática os conhecimentos que venho adquirindo em Python e banco de dados.
 
-O sistema permite realizar o cadastro de produtos, consultar informações, atualizar o estoque, excluir produtos e verificar se um item está dentro da validade. Os dados são armazenados em um banco SQLite.
+O sistema permite que voce realize o cadastro de produtos, consulte informações, atualize o estoque, exclui produtos e verifique se um item está dentro da validade. Os dados são armazenados em um banco SQLite.
 
 ## Funcionalidades
 

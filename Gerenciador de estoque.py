@@ -3,10 +3,10 @@
 #Projeto básico em python de um gerenciador de estoque, onde é usado SQLLITE.
 
 ## Principais Funcionalidades do programa
-- Cadastro de produtos
-- Consulta de produtos
+- Cadastro de produto
+- Consulta de produto
 - Atualização de estoque
-- Exclusão de produtos
+- Exclusão de produto
 - Alerta de validade
 
 
